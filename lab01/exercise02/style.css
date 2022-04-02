@@ -10,15 +10,38 @@ body {
 Add some style blocks below this line to style the cards.
 Feel free to borrow from Exercise 1.
 */
+main{
+    display: flex;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card {
+    box-sizing: border-box;
+    border: solid 2px grey;
+    margin: 5px;
+    width: 40%;
+}
+
+
 
 
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
+
+    main{
+
+        flex-wrap: wrap;
+    }
 
 }
 
 /* Mobile Phone Media Query */
 @media only screen and (max-width: 600px) {
 
-    
+    main{
+        flex-direction: column;
+    }
 }
